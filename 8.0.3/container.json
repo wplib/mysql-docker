@@ -7,7 +7,7 @@
 	"network": "--network wplibbox",
 	"ports": "-p 3306:3306",
 	"volumes": "-v /tmp/sql:/docker-entrypoint-initdb.d -v mysql_data:/var/lib/mysql",
-	"restart": "--restart unless-stopped",
+	"restart": "--restart no",
 	"args": "",
 	"env": "MYSQL_VERSION"
 }
