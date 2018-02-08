@@ -7,7 +7,7 @@
      \/  \/   |_|    |______|_|_.__/  |____/ \___/_/\_\
 ```
 
-![WPLib-Box](https://github.com/wplib/wplib.github.io/blob/master/WPLib-Box-100x.png)
+![WPLib-Box](https://github.com/wplib/wplib.github.io/raw/master/WPLib-Box-100x.png)
 
 
 # MySQL Docker Container for WPLib Box
@@ -35,6 +35,7 @@ Or you can use the GitHub method to build and run the container.
 
 ### Links
 (Docker Hub repo)[https://hub.docker.com/r/wplib/mysql/]
+
 (Docker Cloud repo)[https://cloud.docker.com/swarm/wplib/repository/docker/wplib/mysql/]
 
 
