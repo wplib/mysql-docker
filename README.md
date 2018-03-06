@@ -12,12 +12,12 @@
 
 # MySQL Docker Container for WPLib Box
 This is the repository for the [mysql-docker](https://www.mysql.com/) Docker container implemented for [WPLib-Box](https://github.com/wplib/wplib-box).
-It currently provides versions 5.5.59 5.6.39 5.7.21 8.0.3
+It currently provides versions 5.5.59 5.6.39 5.7.21 8.0.4
 
 
 ## Supported tags and respective Dockerfiles
 
-`8.0.3`, `8.0` _([8.0.3/Dockerfile](https://github.com/wplib/mysql-docker/blob/master/8.0.3/Dockerfile))_
+`8.0.4`, `8.0` _([8.0.4/Dockerfile](https://github.com/wplib/mysql-docker/blob/master/8.0.4/Dockerfile))_
 
 `5.7.21`, `5.7`, `latest` _([5.7.21/Dockerfile](https://github.com/wplib/mysql-docker/blob/master/5.7.21/Dockerfile))_
 
@@ -46,23 +46,23 @@ A simple `docker pull wplib/mysql` will pull down the latest version.
 ### Runtime from Docker Hub
 start - Spin up a Docker container with the correct runtime configs.
 
-`docker run -d --name wplib_mysql_8.0.3 --restart unless-stopped --network wplibbox -p 3306:3306 -v /tmp/sql:/docker-entrypoint-initdb.d -v mysql_data:/var/lib/mysql wplib/mysql:8.0.3`
+`docker run -d --name wplib_mysql_8.0.4 --restart unless-stopped --network wplibbox -p 3306:3306 -v /tmp/sql:/docker-entrypoint-initdb.d -v mysql_data:/var/lib/mysql wplib/mysql:8.0.4`
 
 stop - Stop a Docker container.
 
-`docker stop wplib_mysql_8.0.3`
+`docker stop wplib_mysql_8.0.4`
 
 run - Run a Docker container in the foreground, (all STDOUT and STDERR will go to console). The Container be removed on termination.
 
-`docker run --rm --name wplib_mysql_8.0.3 --network wplibbox -p 3306:3306 -v /tmp/sql:/docker-entrypoint-initdb.d -v mysql_data:/var/lib/mysql wplib/mysql:8.0.3`
+`docker run --rm --name wplib_mysql_8.0.4 --network wplibbox -p 3306:3306 -v /tmp/sql:/docker-entrypoint-initdb.d -v mysql_data:/var/lib/mysql wplib/mysql:8.0.4`
 
 shell - Run a shell, (/bin/bash), within a Docker container.
 
-`docker run --rm --name wplib_mysql_8.0.3 -i -t --network wplibbox -p 3306:3306 -v /tmp/sql:/docker-entrypoint-initdb.d -v mysql_data:/var/lib/mysql wplib/mysql:8.0.3 /bin/bash`
+`docker run --rm --name wplib_mysql_8.0.4 -i -t --network wplibbox -p 3306:3306 -v /tmp/sql:/docker-entrypoint-initdb.d -v mysql_data:/var/lib/mysql wplib/mysql:8.0.4 /bin/bash`
 
 rm - Remove the Docker container.
 
-`docker container rm wplib_mysql_8.0.3`
+`docker container rm wplib_mysql_8.0.4`
 
 
 ## Using it from GitHub repo
