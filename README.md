@@ -46,7 +46,7 @@ A simple `docker pull wplib/mysql` will pull down the latest version.
 ### Runtime from Docker Hub
 start - Spin up a Docker container with the correct runtime configs.
 
-`docker run -d --name wplib_mysql_8.0.4 --restart unless-stopped --network wplibbox -p 3306:3306 -v /tmp/sql:/docker-entrypoint-initdb.d -v mysql_data:/var/lib/mysql wplib/mysql:8.0.4`
+`docker run -d --name wplib_mysql_8.0.4 --restart unless-stopped --network wplibbox -p 3306:3306 -v /vagrant/sql:/docker-entrypoint-initdb.d -v mysql_data:/var/lib/mysql wplib/mysql:8.0.4`
 
 stop - Stop a Docker container.
 
@@ -54,11 +54,11 @@ stop - Stop a Docker container.
 
 run - Run a Docker container in the foreground, (all STDOUT and STDERR will go to console). The Container be removed on termination.
 
-`docker run --rm --name wplib_mysql_8.0.4 --network wplibbox -p 3306:3306 -v /tmp/sql:/docker-entrypoint-initdb.d -v mysql_data:/var/lib/mysql wplib/mysql:8.0.4`
+`docker run --rm --name wplib_mysql_8.0.4 --network wplibbox -p 3306:3306 -v /vagrant/sql:/docker-entrypoint-initdb.d -v mysql_data:/var/lib/mysql wplib/mysql:8.0.4`
 
 shell - Run a shell, (/bin/bash), within a Docker container.
 
-`docker run --rm --name wplib_mysql_8.0.4 -i -t --network wplibbox -p 3306:3306 -v /tmp/sql:/docker-entrypoint-initdb.d -v mysql_data:/var/lib/mysql wplib/mysql:8.0.4 /bin/bash`
+`docker run --rm --name wplib_mysql_8.0.4 -i -t --network wplibbox -p 3306:3306 -v /vagrant/sql:/docker-entrypoint-initdb.d -v mysql_data:/var/lib/mysql wplib/mysql:8.0.4 /bin/bash`
 
 rm - Remove the Docker container.
 
