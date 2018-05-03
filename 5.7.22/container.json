@@ -1,7 +1,7 @@
 {
 	"project": "wplib",
 	"name": "mysql",
-	"version": "5.7.21",
+	"version": "5.7.22",
 	"majorversion": "5.7",
 	"latest": "1",
 	"class": "database",

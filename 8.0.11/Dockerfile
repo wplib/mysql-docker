@@ -1,4 +1,4 @@
-FROM mysql:5.6.39
+FROM mysql:8.0.11
 MAINTAINER WPLib Team <team@wplib.org>
 
 COPY container.json /etc/container.json
