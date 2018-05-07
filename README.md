@@ -17,7 +17,7 @@
 
 # MySQL Docker Container for WPLib Box
 This is the repository for the [mysql-docker](https://www.mysql.com/) Docker container implemented for [WPLib-Box](https://github.com/wplib/wplib-box).
-It currently provides versions 5.5.60 5.6.40 5.7.22 8.0.11
+It currently provides versions 5.5.x 5.6.x 5.7.x 8.0.x
 
 
 ## Supported tags and respective Dockerfiles
