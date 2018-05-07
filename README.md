@@ -1,3 +1,8 @@
+![MySQL 8.0.x](https://img.shields.io/badge/MySQL-8.0.x-green.svg)
+![MySQL 5.7.x](https://img.shields.io/badge/MySQL-5.7.x-green.svg)
+![MySQL 5.6.x](https://img.shields.io/badge/MySQL-5.6.x-green.svg)
+![MySQL 5.5.x](https://img.shields.io/badge/MySQL-5.5.x-green.svg)
+
 ```
  __          _______  _      _ _       ____
  \ \        / /  __ \| |    (_) |     |  _ \
