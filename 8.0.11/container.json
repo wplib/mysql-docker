@@ -7,7 +7,7 @@
 	"class": "database",
 	"network": "--network wplibbox",
 	"ports": "-p 3306:3306",
-	"volumes": "-v /vagrant/sql:/vagrant/sql -v /vagrant/provision:/docker-entrypoint-initdb.d -v mysql_data:/var/lib/mysql",
+	"volumes": "-v /vagrant/sql:/vagrant/sql -v /vagrant/provision:/docker-entrypoint-initdb.d -v mysql-8.0:/var/lib/mysql",
 	"restart": "--restart no",
 	"args": "",
 	"env": "MYSQL_VERSION"
