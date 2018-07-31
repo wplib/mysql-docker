@@ -7,7 +7,7 @@
 	"class": "database",
 	"network": "--network wplibbox",
 	"ports": "-p 3306:3306",
-	"volumes": "-v /projects/wplib.box/sql:/projects/wplib.box/sql -v /projects/wplib.box/provision:/docker-entrypoint-initdb.d -v mysql-5.7:/var/lib/mysql",
+	"volumes": "-v /projects/wplib.box/sql:/projects/wplib.box/sql -v /opt/box/provision:/docker-entrypoint-initdb.d -v mysql-5.7:/var/lib/mysql",
 	"restart": "--restart no",
 	"args": "-e MYSQL_ALLOW_EMPTY_PASSWORD=yes -e MYSQL_DATABASE=wordpress -e MYSQL_USER=wordpress -e MYSQL_PASSWORD=wordpress",
 	"env": "MYSQL_VERSION"
